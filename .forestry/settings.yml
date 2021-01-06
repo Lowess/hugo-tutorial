@@ -1,26 +1,38 @@
 ---
 new_page_extension: md
 auto_deploy: false
-admin_path: 
-webhook_url: 
+admin_path: "/static/admin"
+webhook_url:
 sections:
+- type: heading
+  label: Site
 - type: directory
-  path: content
-  label: Pages
+  path: content/
+  label: Home
+  create: documents
+  match: "**/*"
+  templates:
+  - article
+- type: heading
+  label: Configuration
+- type: directory
+  path: "."
+  label: Configuration
   create: all
-  match: "*"
-upload_dir: static/uploads
-public_path: "/uploads"
+  match: "*.toml"
+  new_doc_ext: toml
+upload_dir: static/images
+public_path: images
 front_matter_path: ''
 use_front_matter_path: false
 file_template: ":filename:"
 build:
   preview_env:
-  - HUGO_ENV=staging
   - HUGO_VERSION=0.79.0
   preview_output_directory: public
-  preview_docker_image: forestryio/hugo:latest
+  preview_docker_image: peaceiris/hugo:v0.79.0-mod
   mount_path: "/srv"
   working_dir: "/srv"
-  instant_preview_command: hugo server -D -E -F --renderToDisk -d public
+  instant_preview_command: server -D -E -F --port 8080 --bind 0.0.0.0 --renderToDisk
+    -d public
 version: 0.79.0
