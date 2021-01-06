@@ -34,5 +34,14 @@
       <description>Page C Content </description>
     </item>
     
+    <item>
+      <title>D</title>
+      <link>https://lowess.github.io/hugo-tutorial/d/</link>
+      <pubDate>Wed, 06 Jan 2021 08:00:00 +0000</pubDate>
+      
+      <guid>https://lowess.github.io/hugo-tutorial/d/</guid>
+      <description>Page D </description>
+    </item>
+    
   </channel>
 </rss>
