@@ -10,5 +10,3 @@ fields:
   name: date
   label: date
   description: Article date
-pages:
-- content/d.md
