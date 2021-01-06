@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://lowess.github.io/hugo-tutorial/a/</loc>
+    <lastmod>2021-01-06T00:36:04-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://lowess.github.io/hugo-tutorial/b/</loc>
+    <lastmod>2021-01-06T00:36:04-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://lowess.github.io/hugo-tutorial/c/</loc>
+    <lastmod>2021-01-06T00:36:06-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://lowess.github.io/hugo-tutorial/categories/</loc>
+  </url>
+  
+  <url>
+    <loc>https://lowess.github.io/hugo-tutorial/</loc>
+  </url>
+  
+  <url>
+    <loc>https://lowess.github.io/hugo-tutorial/tags/</loc>
+  </url>
+  
+</urlset>
