@@ -1,0 +1,11 @@
+{{ define "response" }}
+{
+  "kind" : "{{ .Kind }}",
+  "count" : "{{ len .Pages }}",
+  "items" : [
+      {{ range $i, $e := .Pages -}}
+          {{ if $i }}, {{ end }}{{ .Render "item" }}
+      {{ end }}
+  ]
+}
+{{ end }}

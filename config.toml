@@ -2,3 +2,13 @@ baseURL = "http://example.org/"
 languageCode = "en-us"
 title = "My New Hugo Site"
 theme = "ga-hugo-theme"
+
+# While developing your API, you will need to run the hugo serve command with the --disableFastRender flag
+# in order for Hugo to automatically rebuild these JSON files.
+disableFastRender = true
+
+# JSON templates should go in layouts/_default/{pageKind}.{outputFormatName}.{extension}
+[outputs]
+  home = [ "HTML", "JSON" ]
+  page = ["HTML", "JSON"]
+  section = ["HTML", "JSON"]

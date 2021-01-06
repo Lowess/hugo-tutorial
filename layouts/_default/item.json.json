@@ -1,0 +1,6 @@
+{
+  "kind": "{{ .Kind }}",
+  "title": "{{ .Title }}",
+  "permalink" : "{{ .Permalink }}index.json",
+  "length": "{{ len .Content }}"
+}
