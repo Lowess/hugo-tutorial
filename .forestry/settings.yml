@@ -2,12 +2,12 @@
 new_page_extension: md
 auto_deploy: false
 admin_path: "/static/admin"
-webhook_url:
+webhook_url: 
 sections:
 - type: heading
   label: Site
 - type: directory
-  path: content/
+  path: content
   label: Home
   create: documents
   match: "**/*"
